@@ -1,0 +1,30 @@
+﻿{% extends "base.html" %}
+{% block body %}
+<h1>Resume Analyzer</h1>
+<p class="muted">Paste your job description and upload <em>one</em> resume (TXT/DOCX/PDF).</p>
+
+<form action="/ui/analyze" method="post" enctype="multipart/form-data" style="margin-top:16px">
+  <label for="jd_text">Job Description</label>
+  <textarea id="jd_text" name="jd_text" rows="8" placeholder="Paste the JD here..." required></textarea>
+
+  <div class="row">
+    <div>
+      <label for="file">Resume file</label>
+      <input type="file" id="file" name="file" accept=".txt,.pdf,.docx" required />
+    </div>
+    <div>
+      <label for="use_embeddings">Semantic matching (optional)</label>
+      <select id="use_embeddings" name="use_embeddings">
+        <option value="">Use server default</option>
+        <option value="true">On</option>
+        <option value="false">Off</option>
+      </select>
+    </div>
+  </div>
+
+  <div style="margin-top:16px; display:flex; gap:12px; flex-wrap:wrap">
+    <button type="submit">Analyze</button>
+    <button type="submit" formaction="/ui/report">Analyze & Download PDF</button>
+  </div>
+</form>
+{% endblock %}

@@ -1,0 +1,41 @@
+﻿{% extends "base.html" %}
+{% block body %}
+<h1>Results</h1>
+
+<div class="kv" style="margin-top:8px">
+  <div><strong>Filename</strong></div><div>{{ result.filename }}</div>
+  <div><strong>Engine</strong></div><div>{{ engine }}</div>
+  <div><strong>Final Score</strong></div><div>{{ "%.3f"|format(result.score) }}</div>
+  <div><strong>TF-IDF</strong></div><div>{{ "%.3f"|format(result.tfidf_score) }}</div>
+  <div><strong>Embeddings</strong></div><div>{% if result.embed_score is not none %}{{ "%.3f"|format(result.embed_score) }}{% else %}—{% endif %}</div>
+  <div><strong>ATS Score</strong></div><div>{{ result.ats.score }}</div>
+</div>
+
+<h2 style="margin-top:16px">ATS Tips</h2>
+<div class="list">
+  {% if result.ats.tips|length == 0 %}
+    <span class="tag">No issues detected</span>
+  {% else %}
+    {% for t in result.ats.tips %}<span class="tag">{{ t }}</span>{% endfor %}
+  {% endif %}
+</div>
+
+<div class="row" style="margin-top:16px">
+  <div>
+    <h2>Matched Skills</h2>
+    <div class="list">{% for s in result.explanation.matched_skills %}<span class="tag">{{ s }}</span>{% else %}<span class="tag">None</span>{% endfor %}</div>
+    <h2>Missing Skills</h2>
+    <div class="list">{% for s in result.explanation.missing_skills %}<span class="tag">{{ s }}</span>{% else %}<span class="tag">None</span>{% endfor %}</div>
+  </div>
+  <div>
+    <h2>Matched Terms</h2>
+    <div class="list">{% for s in result.explanation.matched_terms %}<span class="tag">{{ s }}</span>{% else %}<span class="tag">None</span>{% endfor %}</div>
+    <h2>Missing Terms</h2>
+    <div class="list">{% for s in result.explanation.missing_terms %}<span class="tag">{{ s }}</span>{% else %}<span class="tag">None</span>{% endfor %}</div>
+  </div>
+</div>
+
+<div style="margin-top:24px">
+  <a href="/ui">← Analyze another</a>
+</div>
+{% endblock %}

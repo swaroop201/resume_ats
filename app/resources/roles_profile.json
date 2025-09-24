@@ -1,0 +1,7 @@
+{
+  "data_analyst":   { "sql": 3, "excel": 2, "python": 2, "powerbi": 2, "tableau": 2, "statistics": 2 },
+  "data_engineer":  { "python": 2, "sql": 3, "spark": 3, "airflow": 2, "etl": 3, "aws": 2 },
+  "ml_engineer":    { "python": 3, "pytorch": 3, "tensorflow": 3, "mlops": 2, "docker": 2, "aws": 1 },
+  "backend_engineer": { "python": 2, "fastapi": 3, "docker": 2, "aws": 2, "sql": 2, "kubernetes": 1 },
+  "business_analyst": { "excel": 3, "sql": 2, "powerbi": 3, "tableau": 3, "communication": 2 }
+}

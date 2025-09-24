@@ -1,0 +1,37 @@
+{
+  "sql": {
+    "micro_projects": [
+      {"title":"Build a sales KPI dashboard (any BI+SQL)","url":"https://mode.com/sql-tutorial/"},
+      {"title":"Write window functions to rank top customers","url":"https://www.sqltutorial.org/sql-window-functions/"}
+    ],
+    "open_source": [
+      {"title":"good first issue: data quality checks","url":"https://github.com/topics/good-first-issue"}
+    ],
+    "learn": [
+      {"title":"SQLBolt interactive lessons","url":"https://sqlbolt.com/"},
+      {"title":"Mode SQL tutorial","url":"https://mode.com/sql-tutorial/"}
+    ]
+  },
+  "fastapi": {
+    "micro_projects": [
+      {"title":"CRUD API with FastAPI + SQLite","url":"https://fastapi.tiangolo.com/"}
+    ],
+    "open_source": [
+      {"title":"FastAPI issues (good first issue)","url":"https://github.com/tiangolo/fastapi/issues?q=is%3Aopen+label%3A%22good+first+issue%22"}
+    ],
+    "learn": [
+      {"title":"FastAPI docs","url":"https://fastapi.tiangolo.com/"}
+    ]
+  },
+  "aws": {
+    "micro_projects": [
+      {"title":"Deploy a FastAPI app to AWS Elastic Beanstalk","url":"https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/create-deploy-python-flask.html"}
+    ],
+    "open_source": [
+      {"title":"boto3 issues (help wanted)","url":"https://github.com/boto/boto3/issues?q=is%3Aopen+label%3A%22help+wanted%22"}
+    ],
+    "learn": [
+      {"title":"AWS Training: Cloud Practitioner Essentials","url":"https://www.aws.training/Details/Curriculum?id=20685"}
+    ]
+  }
+}

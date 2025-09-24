@@ -1,0 +1,12 @@
+﻿John Doe
+Email: john@example.com
+
+SKILLS: Python, pandas, SQL, Excel, Tableau, Git
+
+EXPERIENCE:
+- Built Tableau dashboards and SQL queries to track weekly KPIs.
+- Cleaned datasets using Python (pandas) and automated simple ETL steps.
+- Collaborated with stakeholders to define metrics and improved refresh time by 20%.
+
+PROJECTS:
+- Sales analysis notebook: pandas + matplotlib; exported charts to a lightweight report.

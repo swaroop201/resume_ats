@@ -1,0 +1,3 @@
+﻿We are hiring a Data Analyst.
+Must-have: SQL, Excel, Python (pandas), Tableau or Power BI, and statistics.
+Nice-to-have: ETL (Airflow/DBT), AWS/GCP, dashboarding best practices.
