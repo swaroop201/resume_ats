@@ -94,22 +94,7 @@ python -m uvicorn app.main:app --reload
 
 ---
 
-## 🧠 How it works (high level)
 
-```mermaid
-flowchart LR
-  A[Upload resume + JD] --> B[Parse<br/>PDF/DOCX/TXT → text]
-  B --> C[Normalize<br/>phrase canon (Power BI→powerbi, CI/CD→ci_cd…)]
-  C --> D[Score<br/>TF-IDF (+ optional embeddings)]
-  D --> E[Blend<br/>(1−w)*tfidf + w*embed]
-  C --> F[Explain<br/>matched/missing skills & terms]
-  C --> G[ATS checks<br/>length/sections/email/format]
-  C --> H[SEC / RoleFit / Actions]
-  E --> I[JSON + PDF]
-  F --> I
-  G --> I
-  H --> I
-```
 
 ---
 
@@ -171,3 +156,4 @@ BLEND_WEIGHT=0.5
 ## 📝 License
 
 MIT — see [LICENSE](./LICENSE).
+
